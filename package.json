@@ -1,0 +1,27 @@
+{
+  "name": "Sikwi",
+  "description": "Sikwi",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "http://sikwi.io/",
+  "author": {
+    "name": "Tibus",
+    "email": "julien.delnatte@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sikwi/sikwi.github.io.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp-jade": "^1.1.0"
+  }
+}

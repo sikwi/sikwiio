@@ -1,0 +1,235 @@
+doctype html
+html( lang="fr-BE" )
+  head
+    meta( charset="UTF-8" )/
+    title Sikwi
+
+    meta( name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1.0" )/
+
+    link( rel="stylesheet", href="styles.css" )/
+
+    // Twitter Card
+    meta( property="twitter:card", content="summary" )/
+    meta( property="twitter:title", content="Sikwi" )/
+    meta( property="twitter:description", content="Site internet de Sikwi" )/
+    meta( property="twitter:image", content="http://julien.delnatte.be/assets/juliendelnatte.jpg" )/
+    meta( property="twitter:creator", content="@juliendelnatte" )/
+
+    // Facebook OpenGraph
+    meta( property="og:type", content="profile" )/
+    meta( property="og:title", content="Delnatte Julien" )/
+    meta( property="og:site_name", content="julien.delnatte.be" )/
+    meta( property="og:description", content="Site internet de Julien Delnatte" )/
+    meta( property="og:image", content="http://julien.delnatte.be/assets/juliendelnatte.jpg" )/
+    meta( property="og:locale", content="fr_BE" )/
+
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript")
+
+    <!--[if lt IE 9]>
+    script( src="http://html5shiv.googlecode.com/svn/trunk/html5.js" )
+    <![endif]-->
+
+  body
+    header
+      div.header
+        h1 Sikwi
+
+        h2 DIY home automation platform
+        h2 Coming Soon!
+
+    section
+      .sectionContent
+        h3 Sikwi? c'est quoi?
+
+        p C'est un écosysteme de <strong>cartes électroniques </strong> liées à la <strong>domotique, l’automatisation et l’électronique en général.</strong>
+        p Empilables comme des légos, elles peuvent être paramêtrées et programmées très facilement pour créer son propre système de domotique, d'automatisation,...
+        p Sikwi, c'est de l'électronique, du software embarqué, des applications, des boitiers en 3D customisables, des services sur le cloud,...
+        p Vous rêvez de créer vous même un systeme de domotique, automatisé votre aquarium, gérer l'arrosage automatique d'une plante ou encore simplement gérer votre chauffage depuis votre smartphone? Sikwi est fait pour vous!
+
+    section.title.electronic
+      .header
+        h2 L'électronique
+
+    section.right.figure
+      .sectionContent
+
+        figure
+          img( alt="MainBoards", src="static/mainboards.JPG" )
+
+        .content
+          h3 Carte de base
+
+          h4 Beaucoup de pouvoir ou la meilleur autonomie?
+          ul
+            li <strong> Sikwi One </strong> : envoi et réception de données en temps réel.&nbsp;
+              span.details (21mm/23mm)
+            li <strong> Sikwi Mini </strong> : envoi de données uniquement pour une meilleure autonomie un encombrement minimum.&nbsp;
+              span.details (19mm/23mm)
+          p Programmées très simplement via le programme de configuration de Sikwi, compatible arduino, déclinées en plusieurs modes de communication
+
+    section.left.figure.grey
+      .sectionContent
+
+        figure
+          img( alt="MainBoards", src="static/miniWifi.JPG" )
+
+        .content
+          h3 Communication
+
+          h4 Chaque carte de base est déclinée en plusieurs modes de communications.
+          ul
+            li <strong> Wifi </strong> : connectée à internet et intéragir avec le monde.
+            li <strong> Bluetooth </strong> : connectée à un device IOS, Android, Windows,...
+            li <strong> Radio 2.4ghz </strong>  : échanger des données dans une protocole très peu énergivore et optimisé.
+            li <strong> USB </strong> : connectée directement à un ordinateur et se faire passer pour un clavier, une souris, un instrument midi,...
+            li <strong> Barebone</strong> : complètement autonomes et très peut énergivores
+
+    section.right.figure
+      .sectionContent
+
+        figure
+          img( alt="MainBoards", src="static/alims.jpg" )
+
+        .content
+          h3 Alimentations
+
+          h4 Choisissez la source d'alimentation qui conviendra à vos besoins
+          ul
+            li <strong> Cable USB </strong> permettant aussi la reprogrammation des cartes de bases.
+            li <strong> Piles AA/AAA/CR2032/CR123 </strong>
+            li <strong> Batterie lypo </strong>
+            li <strong> Alimentation 220VAC </strong>
+            li <strong> ... </strong> 
+
+    section.left.figure.grey
+      .sectionContent
+
+        figure
+          img( alt="MainBoards", src="static/hats.JPG" )
+
+        .content
+          h3 Les cartes empilables
+
+          h4
+            | Plus de 30 cartes empilables pour un maximum de fonctionnalitées...
+
+          ul
+            li <strong> ACDimmer </strong> : Variateur d'intensité d'une ampoule en 220V
+            li <strong> Bouton capacitif </strong>: permet de transformer une surface en bouton 
+            li <strong> Détecteur d'ouverture de porte et fenètre </strong>
+            li <strong> Gyroscope </strong> : récupérer l'inclinaison précise d'un objet ou être informé de son mouvement
+            li <strong> Infrarouge </strong> : controller et recevoir les donnée d'appareils fonctionnant en infrarouge.
+            li <strong> Clavier d'accès RFID </strong> : créer un systême de sécurité d'accès,...
+            li <strong> Meteo</strong> : Température, humidité, luminosité, qualité de l'air, pression athmosphérique,...
+            li <strong> Détecteur de mouvement </strong>
+            li <strong> Relais </strong>
+            li <strong> RF433 </strong>
+            li <strong> ...</strong>
+
+  section.title.casing
+    .header
+      h2
+        | Boitiers
+
+  section.right.figure
+
+    .sectionContent
+      p Nous, on pense au "WAF" : le&nbsp;
+        a(href="https://fr.wikipedia.org/wiki/Facteur_d%27acceptation_f%C3%A9minine" rel="external") Wife Acceptation Factor
+        | . Si tout l’électronique se retrouve à nu partout dans la maison, ce ne sera pas joli!
+
+  section.right.figure
+    .sectionContent
+
+      figure
+        img( alt="MainBoards", src="static/light.jpg" )
+
+      .content
+        h3 Capteurs clé-en-main
+        h4 Si vous n'avez vraiment pas envie de bricoler, aucuns problèmes, vous pouvez acheter des capteurs tout fait, comme dans un magasin.
+        ul
+          li Ampoule Led
+          li Station météo connectée
+          li Détecteur d'ouverture de porte
+          li ...
+
+  section.left.figure.grey
+    .sectionContent
+      figure
+        img( alt="MainBoards", src="static/3D.jpg" )
+
+      .content
+        h3 Impression 3D
+        h4 Faire vos propres boitiers? Biensur!
+        p On vous fournis aussi les plans en 3 dimensions des différentes cartes electroniques. Vous pourrez alors créer vos propres boitiers à imprimée en 3D par exemple.
+        p On propose même des modèles de boitiers prêts à être imprimé en 3D.
+        p A vous de les personnaliser, les modifier,…
+
+
+  section.title.software
+    .header
+      h2 Le software
+
+  section.left.figure
+    .sectionContent
+      p  Les cartes de bases sont reprogrammables simplement et sont compatibles avec Arduino.
+      p  Toutes les libraries, les firmwares internes lié aux différents modes de communications et aux différents shields sont fournies gratuitement et en open-source par Sikwi.
+
+  section.left.figure
+    .sectionContent
+
+      figure
+        img( alt="MainBoards", src="static/cloud.png" )
+
+      .content
+        h3 Server sur le cloud
+        h4 Sikwi propose aussi des service comme un serveur domotique sur le cloud qui peut remplacer complètement les box domotiques les plus connues sur le marché
+        ul
+          li données en temps réel
+          li accessible partout dans le monde
+          li historique des données
+          li scénarios
+          li actions prédéfinies
+          li configuration des cartes
+          li open-source : déployable sur raspberry pi
+          li freemium : abonnement pour plus d'historique, plus de scénarios,...
+          li redirection d'ip dynamique
+          li partage de firmware
+          li compilateur de firmware
+          li API REST
+          li blog et forum
+          li ...
+
+  section.right.figure
+    .sectionContent
+
+      figure
+        img( alt="MainBoards", src="static/configurateur.png" )
+
+      .content
+        h3 Programme de configuration
+        h4 Vous ne développez pas? Vous ne maitrisez pas "Arduino"? Vous n'avez simplement pas le temps? Le programme de configuration de carte est fait pour vous!
+
+        ul
+          li reprogrammation des cartes électroniques
+          li reconnaissance automatiques de la cartes, du mode de communication et du shields connectés
+          li proposition de firware adapté à la carte
+          li editeur de code intégré
+          li éditeur de code simplifier
+          li Upload de firmware sur la carte
+          li Compilateur et librairies sur le cloud
+          li Saugegarde de firmwares
+          li ...
+
+    footer
+      a( href="http://julien.delnatte.be" ) made by julien.delnatte.be
+
+  script(type="text/javascript")
+    |   var nav = $('header .header');
+    |   var header = $('header');
+    |   $(window).scroll(function () {
+    |     var pos = header.outerHeight() - nav.outerHeight();
+    |     var fix = ($(this).scrollTop() > pos) ? true : false;
+    |     nav.toggleClass("fix-nav", fix);
+    |     $('body').toggleClass("fix-body", fix);
+    |   });
